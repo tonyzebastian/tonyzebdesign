@@ -19,14 +19,15 @@ export default function DockNavigation() {
       icon: <img src="/images/nav/home.png" alt="Home" className='h-full w-full object-contain' />
     },
     {
-      title: 'Craft',
-      href: '/craft',
-      icon: <img src="/images/nav/craft.png" alt="Craft" className='h-full w-full object-contain' />
-    },
-    {
       title: 'About',
       href: '/about',
       icon: <img src="/images/nav/about.png" alt="About" className='h-full w-full object-contain' />
+    },
+    {
+      title: 'Playground',
+      href: 'https://play.tonyzeb.design/',
+      icon: <img src="/images/nav/craft.png" alt="Playground" className='h-full w-full object-contain' />,
+      external: true
     }
   ], [])
 
@@ -79,9 +80,15 @@ export default function DockNavigation() {
           >
             <DockLabel>{item.title}</DockLabel>
             <DockIcon>
-              <Link href={item.href}>
-                {item.icon}
-              </Link>
+              {item.external ? (
+                <a href={item.href}>
+                  {item.icon}
+                </a>
+              ) : (
+                <Link href={item.href}>
+                  {item.icon}
+                </Link>
+              )}
             </DockIcon>
           </DockItem>
         ))}
