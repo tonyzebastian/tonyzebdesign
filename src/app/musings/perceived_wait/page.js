@@ -75,7 +75,7 @@ export default function perceived_wait() {
             This animated illustration will not only entertain users but also provide visual feedback on the loading progress, making the experience more enjoyable and informative. 
         </p>
 
-        <Image src="/images/musings/postman_new_loading.gif" alt="Postman Loading Illustration" className="w-full" layout="fixed" width={600} height={300} />
+        <Image src="/images/musings/postman_new_loading.gif" alt="Postman Loading Illustration" className="w-full" width={600} height={300} />
 
         <div style={{ padding: '64.74% 0 0 0', position: 'relative', marginTop: '16px' }}>
             <iframe src="https://player.vimeo.com/video/967628802?h=8ffce8e111&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Postman Initial Loading"></iframe>
@@ -91,7 +91,7 @@ export default function perceived_wait() {
             When designing the animated illustration, it was essential to strike the right balance between creativity and functionality. The illustration should complement the app&apos;s interface, projecting the personality of Postman in a visual tone that resonates with users.. Additionally, the messaging should be light-hearted and informative, offering insights into what&apos;s happening behind the scenes without overwhelming the user. <br/>Some other options that were considered: 
         </p>
 
-        <Image src="/images/musings/design_considerations.gif" alt="design considerations" className="w-full" layout="fixed" width={600} height={300} />
+        <Image src="/images/musings/design_considerations.gif" alt="design considerations" className="w-full" width={600} height={300} />
 
     </section>
 

@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import { Instrument_Serif } from 'next/font/google';
 import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
@@ -20,7 +19,6 @@ export default function RootLayout({ children }) {
                   {children}
               </main>
               <DockNavigation />
-              <Analytics />
           </body>
       </html>
   );

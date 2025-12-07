@@ -17,7 +17,7 @@ export default function MnemonicSignages() {
 
 
             <section className="flex justify-center mb-6 mx-6">
-                <Image src="/images/musings/mall_signs.png" alt="signs of parking indicators in mall parkings" className="w-full" layout="fixed" width={700} height={300}/>   
+                <Image src="/images/musings/mall_signs.png" alt="signs of parking indicators in mall parkings" className="w-full" width={700} height={300}/>
             </section>
 
 
@@ -30,7 +30,7 @@ export default function MnemonicSignages() {
 
 
             <section className="flex justify-center mb-6 mx-6">
-                <Image src="/images/musings/road_signs.png" alt="road signs that indicate certain messages" className="w-full" layout="fixed" width={600} height={300} />
+                <Image src="/images/musings/road_signs.png" alt="road signs that indicate certain messages" className="w-full" width={600} height={300} />
             </section>
 
 
@@ -41,7 +41,7 @@ export default function MnemonicSignages() {
             </section>
 
             <section className="flex justify-center mb-6 mx-6">
-            <Image src="/images/musings/ui_mockups.png" alt="UI elements that resembles that of road signs" className="w-full max-w-full" layout="fixed" width={2100} height={470} />
+            <Image src="/images/musings/ui_mockups.png" alt="UI elements that resembles that of road signs" className="w-full max-w-full" width={2100} height={470} />
             </section>
 
         </div>
