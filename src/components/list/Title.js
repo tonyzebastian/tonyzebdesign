@@ -8,12 +8,14 @@ import { useState } from 'react';
 const Title = ({ image, title, isExternal, isHovered: parentIsHovered, fromFontWeight = 400 }) => {
   const [localIsHovered, setLocalIsHovered] = useState(false);
   const isHovered = parentIsHovered !== undefined ? parentIsHovered : localIsHovered;
+  const hasParentHover = parentIsHovered !== undefined;
 
   return (
-    <div 
+    <div
       className="flex items-center group"
-      onMouseEnter={() => setLocalIsHovered(true)}
-      onMouseLeave={() => setLocalIsHovered(false)}
+      onMouseEnter={!hasParentHover ? () => setLocalIsHovered(true) : undefined}
+      onMouseLeave={!hasParentHover ? () => setLocalIsHovered(false) : undefined}
+      style={hasParentHover ? { pointerEvents: 'none' } : undefined}
     >
       {image && (
         <div className="mr-2 w-6 h-6 flex-shrink-0">

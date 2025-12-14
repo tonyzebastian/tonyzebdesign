@@ -28,7 +28,6 @@ export default function MasonryGrid({ items, spotlight = { enabled: true }, clas
     const specialClassName = item.specialStyling ? "p-2 shadow" : "";
 
     const commonProps = {
-      key: idx,
       className: `${baseClassName} ${specialClassName}`,
       style: { width: "100%", height: "auto" },
       onClick: () => handleItemClick(item)
@@ -37,6 +36,7 @@ export default function MasonryGrid({ items, spotlight = { enabled: true }, clas
     if (isVideo(item.src)) {
       return (
         <video
+          key={idx}
           {...commonProps}
           src={item.src}
           autoPlay
@@ -49,6 +49,7 @@ export default function MasonryGrid({ items, spotlight = { enabled: true }, clas
 
     return (
       <img
+        key={idx}
         {...commonProps}
         src={item.src}
         alt={item.alt}
