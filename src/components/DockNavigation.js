@@ -25,7 +25,7 @@ export default function DockNavigation() {
     },
     {
       title: 'Playground',
-      href: 'https://play.tonyzeb.design/',
+      href: 'https://play.tonyzeb.com/',
       icon: <img src="/images/nav/craft.png" alt="Playground" className='h-full w-full object-contain' />,
       external: true
     }
