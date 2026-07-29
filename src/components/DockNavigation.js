@@ -34,6 +34,11 @@ export default function DockNavigation() {
   useEffect(() => {
     setMounted(true)
 
+    if (pathname.startsWith('/film')) {
+      setIsVisible(false)
+      return
+    }
+
     // Only apply scroll behavior on home page
     if (pathname === '/') {
       const handleScroll = () => {
@@ -50,7 +55,7 @@ export default function DockNavigation() {
     }
   }, [pathname])
 
-  if (!mounted) {
+  if (!mounted || pathname.startsWith('/film')) {
     return null
   }
 
