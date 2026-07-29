@@ -1,6 +1,6 @@
 export const filmContent = {
   hero: {
-    src: "/images/film/hero_video.MP4",
+    src: "/images/film/hero_video.mp4",
     poster: "/images/film/hero.png",
   },
   works: [
