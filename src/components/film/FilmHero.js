@@ -15,6 +15,7 @@ export default function FilmHero({ src, poster }) {
         src={poster}
         alt="A cyclist overlooking the Golden Gate Bridge"
         fill
+        priority
         sizes="100vw"
         className={`object-cover object-top transition-opacity duration-1000 md:object-center ${
           videoReady ? "opacity-0" : "opacity-100"
@@ -30,8 +31,7 @@ export default function FilmHero({ src, poster }) {
         playsInline
         preload="auto"
         aria-hidden="true"
-        onCanPlay={() => setVideoReady(true)}
-        onLoadedData={() => setVideoReady(true)}
+        onPlaying={() => setVideoReady(true)}
         className={`absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-1000 md:object-center ${
           videoReady ? "opacity-100" : "opacity-0"
         }`}
