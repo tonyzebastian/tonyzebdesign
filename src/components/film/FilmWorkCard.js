@@ -82,7 +82,7 @@ export default function FilmWorkCard({ work, index }) {
             </div>
           )}
 
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 hidden min-h-[58%] items-end bg-gradient-to-t from-white via-white/90 to-transparent px-5 pb-5 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus-within:opacity-100 md:flex lg:px-7 lg:pb-7">
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 hidden min-h-[72%] items-end bg-[linear-gradient(to_top,rgba(255,255,255,1)_0%,rgba(255,255,255,0.82)_30%,rgba(255,255,255,0.35)_65%,rgba(255,255,255,0)_100%)] px-5 pb-5 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus-within:opacity-100 md:flex lg:px-7 lg:pb-7">
             <FilmCaption work={work} />
           </div>
         </div>
